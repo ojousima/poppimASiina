@@ -2,3 +2,8 @@
 *.bck
 *.bak
 *.dcm
+
+#LTSpice analysis files
+*.log
+*.raw
+*.fft
