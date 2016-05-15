@@ -12,7 +12,7 @@ encoding utf-8
 Sheet 1 1
 Title "poppimASiina"
 Date "2016-05-15"
-Rev "8a44609"
+Rev "4cb9da6"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""
@@ -769,28 +769,6 @@ F 3 "" H 6900 4950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D_Schottky_x2_ACom_AKK D?
-U 1 1 573903F5
-P 8200 3600
-F 0 "D?" H 8250 3500 50  0000 C CNN
-F 1 "D_Schottky_x2_ACom_AKK" H 8150 3700 50  0000 C CNN
-F 2 "" H 8200 3600 50  0000 C CNN
-F 3 "" H 8200 3600 50  0000 C CNN
-	1    8200 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L D_Schottky_x2_ACom_AKK D?
-U 1 1 57390538
-P 8200 4650
-F 0 "D?" H 8250 4550 50  0000 C CNN
-F 1 "D_Schottky_x2_ACom_AKK" H 8350 4800 50  0000 C CNN
-F 2 "" H 8200 4650 50  0000 C CNN
-F 3 "" H 8200 4650 50  0000 C CNN
-	1    8200 4650
-	1    0    0    1   
-$EndComp
-$Comp
 L CONN_01X03 P?
 U 1 1 5739093E
 P 8700 4050
@@ -902,4 +880,26 @@ Text Notes 8450 3450 2    60   ~ 0
 ESD protection
 Text Notes 8600 4950 2    60   ~ 0
 ESD protection
+$Comp
+L D_Schottky_x2_Serial_ACK D?
+U 1 1 57392FFB
+P 8200 3600
+F 0 "D?" H 8250 3500 50  0000 C CNN
+F 1 "D_Schottky_x2_Serial_ACK" H 8150 3700 50  0000 C CNN
+F 2 "" H 8200 3600 50  0000 C CNN
+F 3 "" H 8200 3600 50  0000 C CNN
+	1    8200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_x2_Serial_ACK D?
+U 1 1 57393248
+P 8200 4650
+F 0 "D?" H 8250 4550 50  0000 C CNN
+F 1 "D_Schottky_x2_Serial_ACK" H 8350 4750 50  0000 C CNN
+F 2 "" H 8200 4650 50  0000 C CNN
+F 3 "" H 8200 4650 50  0000 C CNN
+	1    8200 4650
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
