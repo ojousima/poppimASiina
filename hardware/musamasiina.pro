@@ -1,4 +1,4 @@
-update=Sun 15 May 2016 14:33:15 EEST
+update=Sun 15 May 2016 14:54:47 EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,3 +33,13 @@ LibName1=power
 LibName2=device
 LibName3=conn
 LibName4=lib/wt32
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
