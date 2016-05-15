@@ -12,7 +12,7 @@ encoding utf-8
 Sheet 1 1
 Title "poppimASiina"
 Date "2016-05-15"
-Rev "4cb9da6"
+Rev "ce070c5"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""
