@@ -13,8 +13,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "poppimASiina"
-Date "2016-05-15"
-Rev "ce070c5"
+Date "2016-05-19"
+Rev "0E74983"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""
