@@ -1016,9 +1016,9 @@ Text Label 9900 4950 0    60   ~ 0
 VESD
 Text Label 10000 6000 0    60   ~ 0
 VESD
-Text Label 8100 5700 0    60   ~ 0
+Text Label 7800 5700 0    60   ~ 0
 IN_RIGHT
-Text Label 8100 5300 0    60   ~ 0
+Text Label 7800 5300 0    60   ~ 0
 IN_LEFT
 Text Label 1450 950  2    60   ~ 0
 USB_DN
@@ -1468,9 +1468,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 4950 3900 4950
 Wire Wire Line
-	8100 5700 9550 5700
+	8500 5700 9550 5700
 Wire Wire Line
-	8100 5300 9550 5300
+	8500 5300 9550 5300
 Wire Wire Line
 	9450 5300 9450 5150
 Connection ~ 9450 5300
@@ -2135,4 +2135,30 @@ F 3 "" H 9450 6000 50  0000 C CNN
 	1    9450 6000
 	1    0    0    1   
 $EndComp
+$Comp
+L C C?
+U 1 1 573F922D
+P 8350 5300
+F 0 "C?" H 8375 5400 50  0000 L CNN
+F 1 "2u2" H 8375 5200 50  0000 L CNN
+F 2 "" H 8388 5150 50  0000 C CNN
+F 3 "" H 8350 5300 50  0000 C CNN
+	1    8350 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 573F9334
+P 8350 5700
+F 0 "C?" H 8375 5800 50  0000 L CNN
+F 1 "2u2" H 8375 5600 50  0000 L CNN
+F 2 "" H 8388 5550 50  0000 C CNN
+F 3 "" H 8350 5700 50  0000 C CNN
+	1    8350 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 5300 7800 5300
+Wire Wire Line
+	7800 5700 8200 5700
 $EndSCHEMATC
