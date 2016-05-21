@@ -2,6 +2,8 @@
 *.bck
 *.bak
 *.dcm
+*_saved_*
+*-bak
 
 #LTSpice analysis files
 *.log
