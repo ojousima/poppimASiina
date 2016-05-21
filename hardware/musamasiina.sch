@@ -14,7 +14,7 @@ encoding utf-8
 Sheet 1 6
 Title "poppimASiina block diagram"
 Date "2016-05-21"
-Rev "ce070c5"
+Rev "aa390d9"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""
