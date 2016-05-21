@@ -1,4 +1,4 @@
-update=20/05/2016 23:05:52
+update=Sat 21 May 2016 17:34:42 EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -46,3 +46,4 @@ LibName4=lib/wt32
 LibName5=lib/ltc6242
 LibName6=lib/mic5233-xx
 LibName7=lib/bat54s
+LibName8=lib/tps22860
