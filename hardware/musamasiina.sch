@@ -11,7 +11,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title "poppimASiina"
 Date "2016-05-15"
 Rev "ce070c5"
@@ -21,17 +21,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "ojousima / otso@ojousima.net"
 $EndDescr
-$Comp
-L USB_OTG P1
-U 1 1 57385F4A
-P 800 1050
-F 0 "P1" H 1125 925 50  0000 C CNN
-F 1 "USB_OTG" H 800 1250 50  0000 C CNN
-F 2 "" V 750 950 50  0000 C CNN
-F 3 "" V 750 950 50  0000 C CNN
-	1    800  1050
-	0    -1   1    0   
-$EndComp
 $Comp
 L Battery BT1
 U 1 1 57385FB7
@@ -54,75 +43,6 @@ F 3 "" H 3700 5250 50  0000 C CNN
 	1    3700 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L VCC #PWR11
-U 1 1 57386233
-P 2600 700
-F 0 "#PWR11" H 2600 550 50  0001 C CNN
-F 1 "VCC" H 2600 850 50  0000 C CNN
-F 2 "" H 2600 700 50  0000 C CNN
-F 3 "" H 2600 700 50  0000 C CNN
-	1    2600 700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L FILTER FB1
-U 1 1 57386295
-P 1700 850
-F 0 "FB1" H 1700 1000 50  0000 C CNN
-F 1 "FILTER" H 1700 750 50  0000 C CNN
-F 2 "" H 1700 850 50  0000 C CNN
-F 3 "" H 1700 850 50  0000 C CNN
-	1    1700 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L FILTER FB2
-U 1 1 573862E4
-P 1700 1250
-F 0 "FB2" H 1700 1400 50  0000 C CNN
-F 1 "FILTER" H 1700 1150 50  0000 C CNN
-F 2 "" H 1700 1250 50  0000 C CNN
-F 3 "" H 1700 1250 50  0000 C CNN
-	1    1700 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
-U 1 1 57386320
-P 2600 1050
-F 0 "C4" H 2625 1150 50  0000 L CNN
-F 1 "2u2" H 2625 950 50  0000 L CNN
-F 2 "" H 2638 900 50  0000 C CNN
-F 3 "" H 2600 1050 50  0000 C CNN
-	1    2600 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L ZENER D4
-U 1 1 57386361
-P 2150 1050
-F 0 "D4" H 2150 1150 50  0000 C CNN
-F 1 "ZENER" H 2150 950 50  0000 C CNN
-F 2 "" H 2150 1050 50  0000 C CNN
-F 3 "" H 2150 1050 50  0000 C CNN
-	1    2150 1050
-	0    1    1    0   
-$EndComp
-Text Notes 2200 1200 0    60   ~ 0
-TVS
-$Comp
-L GNDD #PWR12
-U 1 1 573865FE
-P 2600 1500
-F 0 "#PWR12" H 2600 1250 50  0001 C CNN
-F 1 "GNDD" H 2600 1350 50  0000 C CNN
-F 2 "" H 2600 1500 50  0000 C CNN
-F 3 "" H 2600 1500 50  0000 C CNN
-	1    2600 1500
-	1    0    0    -1  
-$EndComp
-NoConn ~ 700  1450
 $Comp
 L GNDD #PWR22
 U 1 1 57386A2B
@@ -418,10 +338,6 @@ F 3 "" H 7750 950 50  0000 C CNN
 	1    7750 950 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3500 5750
-NoConn ~ 3500 5850
-NoConn ~ 3500 5950
-NoConn ~ 3500 6050
 NoConn ~ 3500 6250
 NoConn ~ 3500 6350
 NoConn ~ 3500 6450
@@ -442,17 +358,6 @@ Text Label 7450 3700 2    60   ~ 0
 LEFT_OUT
 Text Label 7500 5400 2    60   ~ 0
 RIGHT_OUT
-$Comp
-L +BATT #PWR3
-U 1 1 5738DC8A
-P 800 3400
-F 0 "#PWR3" H 800 3250 50  0001 C CNN
-F 1 "+BATT" H 800 3540 50  0000 C CNN
-F 2 "" H 800 3400 50  0000 C CNN
-F 3 "" H 800 3400 50  0000 C CNN
-	1    800  3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L SW_PUSH SW1
 U 1 1 5738DCCA
@@ -642,41 +547,6 @@ ESD protection
 Text Notes 9550 4250 2    60   ~ 0
 ESD protection
 $Comp
-L MIC5233-xx U1
-U 1 1 5739535D
-P 1900 2200
-F 0 "U1" H 1900 2550 60  0000 C CNN
-F 1 "MIC5233-3.3" H 1950 2450 60  0000 C CNN
-F 2 "" H 1900 2200 60  0000 C CNN
-F 3 "" H 1900 2200 60  0000 C CNN
-	1    1900 2200
-	1    0    0    -1  
-$EndComp
-Text Label 900  2300 0    60   ~ 0
-ENABLE
-$Comp
-L GNDD #PWR9
-U 1 1 57396141
-P 1900 2900
-F 0 "#PWR9" H 1900 2650 50  0001 C CNN
-F 1 "GNDD" H 1900 2750 50  0000 C CNN
-F 2 "" H 1900 2900 50  0000 C CNN
-F 3 "" H 1900 2900 50  0000 C CNN
-	1    1900 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L +BATT #PWR1
-U 1 1 573963CB
-P 600 1900
-F 0 "#PWR1" H 600 1750 50  0001 C CNN
-F 1 "+BATT" H 600 2040 50  0000 C CNN
-F 2 "" H 600 1900 50  0000 C CNN
-F 3 "" H 600 1900 50  0000 C CNN
-	1    600  1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C9
 U 1 1 57397113
 P 4150 5650
@@ -703,54 +573,8 @@ Capacitor required for \nSMPS protection.\nDO NOT REPLACE.
 NoConn ~ 1900 6950
 Text Label 3950 5550 2    60   ~ 0
 CHRG
-$Comp
-L LED D5
-U 1 1 57397E04
-P 2950 1250
-F 0 "D5" H 2950 1350 50  0000 C CNN
-F 1 "LED" H 2950 1150 50  0000 C CNN
-F 2 "" H 2950 1250 50  0000 C CNN
-F 3 "" H 2950 1250 50  0000 C CNN
-	1    2950 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C2
-U 1 1 5738AA9F
-P 1450 2500
-F 0 "C2" H 1475 2600 50  0000 L CNN
-F 1 "2u2" H 1475 2400 50  0000 L CNN
-F 2 "" H 1488 2350 50  0000 C CNN
-F 3 "" H 1450 2500 50  0000 C CNN
-	1    1450 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C3
-U 1 1 5738C82F
-P 2400 2450
-F 0 "C3" H 2425 2550 50  0000 L CNN
-F 1 "2u2" H 2425 2350 50  0000 L CNN
-F 2 "" H 2438 2300 50  0000 C CNN
-F 3 "" H 2400 2450 50  0000 C CNN
-	1    2400 2450
-	1    0    0    -1  
-$EndComp
 Text Notes 1000 7600 0    60   ~ 0
 NO EXTERNAL\nPULLUP/DOWN\nfor reset
-$Comp
-L R R7
-U 1 1 5738DDB2
-P 2950 850
-F 0 "R7" V 3030 850 50  0000 C CNN
-F 1 "10k" V 2950 850 50  0000 C CNN
-F 2 "" V 2880 850 50  0000 C CNN
-F 3 "" H 2950 850 50  0000 C CNN
-	1    2950 850 
-	1    0    0    -1  
-$EndComp
-Text Label 3300 1500 2    60   ~ 0
-CHRG
 $Comp
 L R R3
 U 1 1 5738E905
@@ -815,17 +639,6 @@ TXD
 Text Notes 600  6750 0    60   ~ 0
 ext. pullup required \nfor RXD
 $Comp
-L WT32 U2
-U 1 1 57385F07
-P 2700 5550
-F 0 "U2" H 2700 7400 60  0000 C CNN
-F 1 "WT32" H 2700 7300 60  0000 C CNN
-F 2 "" H 2700 6050 60  0000 C CNN
-F 3 "" H 2700 6050 60  0000 C CNN
-	1    2700 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R5
 U 1 1 57392904
 P 1700 6150
@@ -851,76 +664,6 @@ Text Label 1250 6150 0    60   ~ 0
 USB_DN
 Text Label 1250 6250 0    60   ~ 0
 USB_DP
-$Comp
-L VDD #PWR13
-U 1 1 57393B77
-P 2650 2050
-F 0 "#PWR13" H 2650 1900 50  0001 C CNN
-F 1 "VDD" H 2650 2200 50  0000 C CNN
-F 2 "" H 2650 2050 50  0000 C CNN
-F 3 "" H 2650 2050 50  0000 C CNN
-	1    2650 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L R 18k1
-U 1 1 573942BE
-P 2850 2300
-F 0 "18k1" V 2930 2300 50  0000 C CNN
-F 1 "R" V 2850 2300 50  0000 C CNN
-F 2 "" V 2780 2300 50  0000 C CNN
-F 3 "" H 2850 2300 50  0000 C CNN
-	1    2850 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L R 15k1
-U 1 1 5739436D
-P 2850 2700
-F 0 "15k1" V 2930 2700 50  0000 C CNN
-F 1 "R" V 2850 2700 50  0000 C CNN
-F 2 "" V 2780 2700 50  0000 C CNN
-F 3 "" H 2850 2700 50  0000 C CNN
-	1    2850 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR14
-U 1 1 57394AC6
-P 2850 2900
-F 0 "#PWR14" H 2850 2650 50  0001 C CNN
-F 1 "GNDD" H 2850 2750 50  0000 C CNN
-F 2 "" H 2850 2900 50  0000 C CNN
-F 3 "" H 2850 2900 50  0000 C CNN
-	1    2850 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C5
-U 1 1 57394B32
-P 3100 2700
-F 0 "C5" H 3125 2800 50  0000 L CNN
-F 1 "2u2" H 3125 2600 50  0000 L CNN
-F 2 "" H 3138 2550 50  0000 C CNN
-F 3 "" H 3100 2700 50  0000 C CNN
-	1    3100 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR16
-U 1 1 57394E07
-P 3100 2900
-F 0 "#PWR16" H 3100 2650 50  0001 C CNN
-F 1 "GNDD" H 3100 2750 50  0000 C CNN
-F 2 "" H 3100 2900 50  0000 C CNN
-F 3 "" H 3100 2900 50  0000 C CNN
-	1    3100 2900
-	1    0    0    -1  
-$EndComp
-Text Label 3100 2500 0    60   ~ 0
-VESD
-Text Notes 3350 2400 0    60   ~ 0
-1.5V for ESD\nstrike mitigation.\nCapacitor close to\nESD entry point
 Text Notes 10500 3400 0    60   ~ 0
 3.5mm out
 $Comp
@@ -1020,10 +763,6 @@ Text Label 7800 5700 0    60   ~ 0
 IN_RIGHT
 Text Label 7800 5300 0    60   ~ 0
 IN_LEFT
-Text Label 1450 950  2    60   ~ 0
-USB_DN
-Text Label 1450 1050 2    60   ~ 0
-USB_DP
 $Comp
 L LTC6242 U4
 U 4 1 573A71C1
@@ -1157,22 +896,6 @@ Text Notes 11000 1700 1    60   ~ 0
 3.5mm mono
 Wire Wire Line
 	3500 5250 3700 5250
-Wire Wire Line
-	2600 700  2600 900 
-Wire Wire Line
-	2600 1200 2600 1500
-Connection ~ 2600 850 
-Connection ~ 2600 1250
-Wire Wire Line
-	1100 850  1350 850 
-Wire Wire Line
-	1100 1250 1350 1250
-Wire Wire Line
-	2050 850  2600 850 
-Connection ~ 2150 850 
-Wire Wire Line
-	2050 1250 2600 1250
-Connection ~ 2150 1250
 Wire Wire Line
 	3500 5350 4400 5350
 Wire Wire Line
@@ -1358,12 +1081,6 @@ Wire Wire Line
 	800  4650 800  4750
 Connection ~ 800  4700
 Wire Wire Line
-	900  2300 1500 2300
-Wire Wire Line
-	1900 2600 1900 2900
-Wire Wire Line
-	1100 2100 1500 2100
-Wire Wire Line
 	4400 5350 4400 5500
 Wire Wire Line
 	4150 5500 4150 5350
@@ -1372,38 +1089,6 @@ Wire Wire Line
 	4150 6000 4150 5800
 Wire Wire Line
 	3500 5550 3950 5550
-Wire Wire Line
-	1450 2100 1450 2350
-Connection ~ 1450 2100
-Wire Wire Line
-	1450 2650 1450 2750
-Wire Wire Line
-	1450 2750 1900 2750
-Connection ~ 1900 2750
-Wire Wire Line
-	2300 2100 2850 2100
-Wire Wire Line
-	2400 2100 2400 2300
-Wire Wire Line
-	2400 2600 2400 2700
-Wire Wire Line
-	2400 2700 1900 2700
-Connection ~ 1900 2700
-Wire Wire Line
-	2600 800  2800 800 
-Wire Wire Line
-	2800 800  2800 650 
-Wire Wire Line
-	2800 650  2950 650 
-Wire Wire Line
-	2950 650  2950 700 
-Connection ~ 2600 800 
-Wire Wire Line
-	2950 1000 2950 1050
-Wire Wire Line
-	2950 1450 2950 1500
-Wire Wire Line
-	2950 1500 3300 1500
 Wire Wire Line
 	1100 5150 1100 5200
 Connection ~ 1100 5150
@@ -1433,25 +1118,6 @@ Wire Wire Line
 	1250 6150 1550 6150
 Wire Wire Line
 	1250 6250 1550 6250
-Connection ~ 2400 2100
-Wire Wire Line
-	2650 2100 2650 2050
-Wire Wire Line
-	2850 2100 2850 2150
-Connection ~ 2650 2100
-Wire Wire Line
-	2850 2450 2850 2550
-Wire Wire Line
-	2850 2850 2850 2900
-Wire Wire Line
-	2850 2500 3100 2500
-Wire Wire Line
-	3100 2500 3100 2550
-Connection ~ 2850 2500
-Wire Wire Line
-	3100 2850 3100 2900
-Wire Wire Line
-	600  1900 600  2100
 Wire Wire Line
 	4000 4850 3500 4850
 Wire Wire Line
@@ -1492,10 +1158,6 @@ Wire Wire Line
 	7650 3700 7650 3250
 Wire Wire Line
 	7700 3650 7700 5400
-Wire Wire Line
-	1100 950  1450 950 
-Wire Wire Line
-	1100 1050 1450 1050
 Wire Wire Line
 	9600 1300 9600 1150
 Wire Wire Line
@@ -1585,27 +1247,6 @@ Wire Notes Line
 	1250 5100 1250 6250
 Text Notes 900  5100 0    60   ~ 0
 Optional
-Wire Notes Line
-	2750 2050 3350 2050
-Wire Notes Line
-	3350 2050 3350 3100
-Wire Notes Line
-	3350 3100 2750 3100
-Wire Notes Line
-	2750 3100 2750 2050
-Text Notes 2750 2050 0    60   ~ 0
-Optional
-Wire Notes Line
-	3350 1550 2800 1550
-Wire Notes Line
-	2800 1550 2800 600 
-Wire Notes Line
-	2800 600  3350 600 
-Wire Notes Line
-	3350 600  3350 1550
-Text Notes 2800 600  0    60   ~ 0
-Optional
-NoConn ~ 1100 1150
 Text Notes 6300 1200 0    60   ~ 0
 Capacitor: \nPower-on pop
 Text Notes 600  4550 0    60   ~ 0
@@ -1614,39 +1255,6 @@ Text Notes 600  4950 0    60   ~ 0
 ?
 Text Notes 650  5850 0    60   ~ 0
 ?
-$Comp
-L D_Schottky D2
-U 1 1 573CE98E
-P 950 2100
-F 0 "D2" H 950 2200 50  0000 C CNN
-F 1 "D_Schottky" H 950 2000 50  0000 C CNN
-F 2 "" H 950 2100 50  0000 C CNN
-F 3 "" H 950 2100 50  0000 C CNN
-	1    950  2100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	600  2100 800  2100
-$Comp
-L VCC #PWR6
-U 1 1 573CF485
-P 1350 1900
-F 0 "#PWR6" H 1350 1750 50  0001 C CNN
-F 1 "VCC" H 1350 2050 50  0000 C CNN
-F 2 "" H 1350 1900 50  0000 C CNN
-F 3 "" H 1350 1900 50  0000 C CNN
-	1    1350 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1900 1350 2100
-Text Notes 1150 650  0    60   ~ 0
-total bus capacitance 4.4u
-Text Notes 950  1950 0    60   ~ 0
-?
-Connection ~ 1350 2100
-Text Notes 500  1700 0    60   ~ 0
-Powered by VBATT or VUSB
 Wire Wire Line
 	9150 3250 9150 3150
 Connection ~ 9150 3250
@@ -1936,37 +1544,6 @@ Wire Wire Line
 Text Notes 7950 3000 0    60   ~ 0
 Mono output
 $Comp
-L TPS22860 U3
-U 1 1 573E6852
-P 4550 1050
-F 0 "U3" H 4550 1450 60  0000 C CNN
-F 1 "TPS22860" H 4600 1350 60  0000 C CNN
-F 2 "" H 4550 1050 60  0000 C CNN
-F 3 "" H 4550 1050 60  0000 C CNN
-	1    4550 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +BATT #PWR17
-U 1 1 573E6B3A
-P 3650 750
-F 0 "#PWR17" H 3650 600 50  0001 C CNN
-F 1 "+BATT" H 3650 890 50  0000 C CNN
-F 2 "" H 3650 750 50  0000 C CNN
-F 3 "" H 3650 750 50  0000 C CNN
-	1    3650 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 850  4150 850 
-Wire Wire Line
-	3950 950  4150 950 
-Connection ~ 3950 850 
-Wire Wire Line
-	3850 1050 4150 1050
-Text Label 3850 1050 0    60   ~ 0
-ENABLE
-$Comp
 L VCOM #PWR30
 U 1 1 573B619B
 P 6800 2750
@@ -1991,53 +1568,6 @@ Wire Wire Line
 Connection ~ 7200 2800
 Wire Wire Line
 	8050 1450 8050 1400
-$Comp
-L GNDA #PWR18
-U 1 1 573EC8EE
-P 3650 1300
-F 0 "#PWR18" H 3650 1050 50  0001 C CNN
-F 1 "GNDA" H 3650 1150 50  0000 C CNN
-F 2 "" H 3650 1300 50  0000 C CNN
-F 3 "" H 3650 1300 50  0000 C CNN
-	1    3650 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 1250 4150 1250
-$Comp
-L C C6
-U 1 1 573EEE5C
-P 3650 1050
-F 0 "C6" H 3675 1150 50  0000 L CNN
-F 1 "2u2" H 3675 950 50  0000 L CNN
-F 2 "" H 3688 900 50  0000 C CNN
-F 3 "" H 3650 1050 50  0000 C CNN
-	1    3650 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 750  3650 900 
-Connection ~ 3650 850 
-Wire Wire Line
-	3650 1200 3650 1300
-Connection ~ 3650 1250
-Wire Wire Line
-	3950 950  3950 850 
-Wire Wire Line
-	4950 850  5100 850 
-Wire Wire Line
-	5100 850  5100 750 
-$Comp
-L VAA #PWR24
-U 1 1 573EFCE1
-P 5100 750
-F 0 "#PWR24" H 5100 600 50  0001 C CNN
-F 1 "VAA" H 5100 900 50  0000 C CNN
-F 2 "" H 5100 750 50  0000 C CNN
-F 3 "" H 5100 750 50  0000 C CNN
-	1    5100 750 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 5150 1800 4750
 Wire Wire Line
@@ -2161,4 +1691,76 @@ Wire Wire Line
 	8200 5300 7800 5300
 Wire Wire Line
 	7800 5700 8200 5700
+$Comp
+L WT32 U2
+U 1 1 57385F07
+P 2700 5550
+F 0 "U2" H 2700 7400 60  0000 C CNN
+F 1 "WT32" H 2700 7300 60  0000 C CNN
+F 2 "" H 2700 6050 60  0000 C CNN
+F 3 "" H 2700 6050 60  0000 C CNN
+	1    2700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5750 3700 5750
+Wire Wire Line
+	3700 5850 3500 5850
+Wire Wire Line
+	3500 5950 3700 5950
+Wire Wire Line
+	3700 6050 3500 6050
+Text Label 3700 5750 2    60   ~ 0
+MOSI
+Text Label 3700 5850 2    60   ~ 0
+MISO
+Text Label 3700 5950 2    60   ~ 0
+SCLK
+Text Label 3700 6050 2    60   ~ 0
+CS
+$Sheet
+S 1950 750  850  750 
+U 573FBA21
+F0 "Power Supply" 60
+F1 "psu.sch" 60
+F2 "VBUS" I L 1950 900 60 
+F3 "GNDBUS" I L 1950 1300 60 
+F4 "VESD" O R 2800 1100 60 
+F5 "ENABLE" I L 1950 1000 60 
+F6 "VAA" O R 2800 1000 60 
+F7 "5V" O R 2800 900 60 
+F8 "CHRG" I L 1950 1100 60 
+F9 "GNDD" O R 2800 1300 60 
+$EndSheet
+NoConn ~ 1150 1200
+Wire Wire Line
+	1150 1100 1500 1100
+Wire Wire Line
+	1150 1000 1500 1000
+Wire Wire Line
+	1150 1300 1950 1300
+Wire Wire Line
+	1150 900  1950 900 
+Text Label 1500 1100 2    60   ~ 0
+USB_DP
+Text Label 1500 1000 2    60   ~ 0
+USB_DN
+NoConn ~ 750  1500
+$Comp
+L USB_OTG P1
+U 1 1 57385F4A
+P 850 1100
+F 0 "P1" H 1175 975 50  0000 C CNN
+F 1 "USB_OTG" H 850 1300 50  0000 C CNN
+F 2 "" V 800 1000 50  0000 C CNN
+F 3 "" V 800 1000 50  0000 C CNN
+	1    850  1100
+	0    -1   1    0   
+$EndComp
+$Sheet
+S 4450 1750 1400 1000
+U 574074FD
+F0 "Analog" 60
+F1 "analog.sch" 60
+$EndSheet
 $EndSCHEMATC

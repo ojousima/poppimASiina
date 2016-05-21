@@ -1,0 +1,449 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:wt32
+LIBS:ltc6242
+LIBS:mic5233-xx
+LIBS:bat54s
+LIBS:musamasiina-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "poppimASiina"
+Date "2016-05-15"
+Rev "ce070c5"
+Comp "Aivan Sama / Säätökerho"
+Comment1 "http://tinyurl.com/saatomieliset"
+Comment2 ""
+Comment3 ""
+Comment4 "ojousima / otso@ojousima.net"
+$EndDescr
+$Comp
+L FILTER FB?
+U 1 1 573FE4DD
+P 2800 1550
+F 0 "FB?" H 2800 1700 50  0000 C CNN
+F 1 "FILTER" H 2800 1450 50  0000 C CNN
+F 2 "" H 2800 1550 50  0000 C CNN
+F 3 "" H 2800 1550 50  0000 C CNN
+	1    2800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L FILTER FB?
+U 1 1 573FE4DE
+P 2800 1950
+F 0 "FB?" H 2800 2100 50  0000 C CNN
+F 1 "FILTER" H 2800 1850 50  0000 C CNN
+F 2 "" H 2800 1950 50  0000 C CNN
+F 3 "" H 2800 1950 50  0000 C CNN
+	1    2800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 573FE4DF
+P 3700 1750
+F 0 "C?" H 3725 1850 50  0000 L CNN
+F 1 "2u2" H 3725 1650 50  0000 L CNN
+F 2 "" H 3738 1600 50  0000 C CNN
+F 3 "" H 3700 1750 50  0000 C CNN
+	1    3700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 573FE4E0
+P 3250 1750
+F 0 "D?" H 3250 1850 50  0000 C CNN
+F 1 "ZENER" H 3250 1650 50  0000 C CNN
+F 2 "" H 3250 1750 50  0000 C CNN
+F 3 "" H 3250 1750 50  0000 C CNN
+	1    3250 1750
+	0    1    1    0   
+$EndComp
+Text Notes 3300 1900 0    60   ~ 0
+TVS
+$Comp
+L MIC5233-xx U?
+U 1 1 573FE50D
+P 3250 4150
+F 0 "U?" H 3250 4500 60  0000 C CNN
+F 1 "MIC5233-3.3" H 3300 4400 60  0000 C CNN
+F 2 "" H 3250 4150 60  0000 C CNN
+F 3 "" H 3250 4150 60  0000 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 573FE50E
+P 3250 4850
+F 0 "#PWR?" H 3250 4600 50  0001 C CNN
+F 1 "GNDD" H 3250 4700 50  0000 C CNN
+F 2 "" H 3250 4850 50  0000 C CNN
+F 3 "" H 3250 4850 50  0000 C CNN
+	1    3250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 573FE50F
+P 1950 3850
+F 0 "#PWR?" H 1950 3700 50  0001 C CNN
+F 1 "+BATT" H 1950 3990 50  0000 C CNN
+F 2 "" H 1950 3850 50  0000 C CNN
+F 3 "" H 1950 3850 50  0000 C CNN
+	1    1950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 573FE512
+P 4300 2150
+F 0 "D?" H 4300 2250 50  0000 C CNN
+F 1 "LED" H 4300 2050 50  0000 C CNN
+F 2 "" H 4300 2150 50  0000 C CNN
+F 3 "" H 4300 2150 50  0000 C CNN
+	1    4300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 573FE513
+P 2800 4450
+F 0 "C?" H 2825 4550 50  0000 L CNN
+F 1 "2u2" H 2825 4350 50  0000 L CNN
+F 2 "" H 2838 4300 50  0000 C CNN
+F 3 "" H 2800 4450 50  0000 C CNN
+	1    2800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 573FE514
+P 3750 4400
+F 0 "C?" H 3775 4500 50  0000 L CNN
+F 1 "2u2" H 3775 4300 50  0000 L CNN
+F 2 "" H 3788 4250 50  0000 C CNN
+F 3 "" H 3750 4400 50  0000 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 573FE515
+P 4300 1750
+F 0 "R?" V 4380 1750 50  0000 C CNN
+F 1 "10k" V 4300 1750 50  0000 C CNN
+F 2 "" V 4230 1750 50  0000 C CNN
+F 3 "" H 4300 1750 50  0000 C CNN
+	1    4300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 573FE51D
+P 4000 4000
+F 0 "#PWR?" H 4000 3850 50  0001 C CNN
+F 1 "VDD" H 4000 4150 50  0000 C CNN
+F 2 "" H 4000 4000 50  0000 C CNN
+F 3 "" H 4000 4000 50  0000 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 18k?
+U 1 1 573FE51E
+P 4200 4250
+F 0 "18k?" V 4280 4250 50  0000 C CNN
+F 1 "R" V 4200 4250 50  0000 C CNN
+F 2 "" V 4130 4250 50  0000 C CNN
+F 3 "" H 4200 4250 50  0000 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 15k?
+U 1 1 573FE51F
+P 4200 4650
+F 0 "15k?" V 4280 4650 50  0000 C CNN
+F 1 "R" V 4200 4650 50  0000 C CNN
+F 2 "" V 4130 4650 50  0000 C CNN
+F 3 "" H 4200 4650 50  0000 C CNN
+	1    4200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 573FE520
+P 4200 4850
+F 0 "#PWR?" H 4200 4600 50  0001 C CNN
+F 1 "GNDD" H 4200 4700 50  0000 C CNN
+F 2 "" H 4200 4850 50  0000 C CNN
+F 3 "" H 4200 4850 50  0000 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+Text Notes 4100 3900 0    60   ~ 0
+1.5V for ESD\nstrike mitigation.\nCapacitor close to\nESD entry point
+Wire Wire Line
+	3700 1400 3700 1450
+Wire Wire Line
+	3700 1450 3700 1550
+Wire Wire Line
+	3700 1550 3700 1600
+Wire Wire Line
+	3700 1900 3700 1950
+Wire Wire Line
+	3700 1950 3700 2600
+Wire Wire Line
+	3700 2600 3700 2650
+Connection ~ 3700 1550
+Connection ~ 3700 1950
+Wire Wire Line
+	2200 1550 2450 1550
+Wire Wire Line
+	2200 1950 2450 1950
+Wire Wire Line
+	3150 1550 3250 1550
+Wire Wire Line
+	3250 1550 3700 1550
+Wire Wire Line
+	3700 1550 4300 1550
+Connection ~ 3250 1550
+Wire Wire Line
+	3150 1950 3250 1950
+Wire Wire Line
+	3250 1950 3700 1950
+Connection ~ 3250 1950
+Wire Wire Line
+	2250 4250 2850 4250
+Wire Wire Line
+	3250 4550 3250 4650
+Wire Wire Line
+	3250 4650 3250 4700
+Wire Wire Line
+	3250 4700 3250 4850
+Wire Wire Line
+	2450 4050 2700 4050
+Wire Wire Line
+	2700 4050 2800 4050
+Wire Wire Line
+	2800 4050 2850 4050
+Wire Wire Line
+	2800 4050 2800 4300
+Connection ~ 2800 4050
+Wire Wire Line
+	2800 4600 2800 4700
+Wire Wire Line
+	2800 4700 3250 4700
+Connection ~ 3250 4700
+Wire Wire Line
+	3650 4050 3750 4050
+Wire Wire Line
+	3750 4050 4000 4050
+Wire Wire Line
+	4000 4050 4200 4050
+Wire Wire Line
+	3750 4050 3750 4250
+Wire Wire Line
+	3750 4550 3750 4650
+Wire Wire Line
+	3750 4650 3250 4650
+Connection ~ 3250 4650
+Wire Wire Line
+	4300 1550 4300 1600
+Connection ~ 3700 1450
+Wire Wire Line
+	4300 1900 4300 1950
+Wire Wire Line
+	4300 2350 4300 2400
+Connection ~ 3750 4050
+Wire Wire Line
+	4000 4050 4000 4000
+Wire Wire Line
+	4200 4050 4200 4100
+Connection ~ 4000 4050
+Wire Wire Line
+	4200 4400 4200 4450
+Wire Wire Line
+	4200 4450 4200 4500
+Wire Wire Line
+	4200 4800 4200 4850
+Wire Wire Line
+	4200 4450 4750 4450
+Connection ~ 4200 4450
+Wire Wire Line
+	1950 3850 1950 4050
+Wire Notes Line
+	4100 4000 4700 4000
+Wire Notes Line
+	4700 4000 4700 5050
+Wire Notes Line
+	4700 5050 4100 5050
+Wire Notes Line
+	4100 5050 4100 4000
+Text Notes 4100 4000 0    60   ~ 0
+Optional
+Wire Notes Line
+	4700 2450 4150 2450
+Wire Notes Line
+	4150 2450 4150 1500
+Wire Notes Line
+	4150 1500 4700 1500
+Wire Notes Line
+	4700 1500 4700 2450
+Text Notes 4650 2100 1    60   ~ 0
+Optional
+$Comp
+L D_Schottky D?
+U 1 1 573FE536
+P 2300 4050
+F 0 "D?" H 2300 4150 50  0000 C CNN
+F 1 "D_Schottky" H 2300 3950 50  0000 C CNN
+F 2 "" H 2300 4050 50  0000 C CNN
+F 3 "" H 2300 4050 50  0000 C CNN
+	1    2300 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 4050 2150 4050
+Wire Wire Line
+	2700 3850 2700 4050
+Text Notes 2250 1350 0    60   ~ 0
+total bus capacitance 4.4u
+Connection ~ 2700 4050
+Text Notes 1850 3650 0    60   ~ 0
+Powered by VBATT or VUSB
+$Comp
+L TPS22860 U?
+U 1 1 573FE54A
+P 4050 6300
+F 0 "U?" H 4050 6700 60  0000 C CNN
+F 1 "TPS22860" H 4100 6600 60  0000 C CNN
+F 2 "" H 4050 6300 60  0000 C CNN
+F 3 "" H 4050 6300 60  0000 C CNN
+	1    4050 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 573FE54B
+P 3150 6000
+F 0 "#PWR?" H 3150 5850 50  0001 C CNN
+F 1 "+BATT" H 3150 6140 50  0000 C CNN
+F 2 "" H 3150 6000 50  0000 C CNN
+F 3 "" H 3150 6000 50  0000 C CNN
+	1    3150 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6100 3450 6100
+Wire Wire Line
+	3450 6100 3650 6100
+Wire Wire Line
+	3450 6200 3650 6200
+Connection ~ 3450 6100
+Wire Wire Line
+	3350 6300 3650 6300
+Text Label 3350 6300 0    60   ~ 0
+ENABLE
+$Comp
+L GNDA #PWR?
+U 1 1 573FE54D
+P 3150 6550
+F 0 "#PWR?" H 3150 6300 50  0001 C CNN
+F 1 "GNDA" H 3150 6400 50  0000 C CNN
+F 2 "" H 3150 6550 50  0000 C CNN
+F 3 "" H 3150 6550 50  0000 C CNN
+	1    3150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6500 3650 6500
+$Comp
+L C C?
+U 1 1 573FE54E
+P 3150 6300
+F 0 "C?" H 3175 6400 50  0000 L CNN
+F 1 "2u2" H 3175 6200 50  0000 L CNN
+F 2 "" H 3188 6150 50  0000 C CNN
+F 3 "" H 3150 6300 50  0000 C CNN
+	1    3150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6000 3150 6100
+Wire Wire Line
+	3150 6100 3150 6150
+Connection ~ 3150 6100
+Wire Wire Line
+	3150 6450 3150 6500
+Wire Wire Line
+	3150 6500 3150 6550
+Connection ~ 3150 6500
+Wire Wire Line
+	3450 6200 3450 6100
+Wire Wire Line
+	4450 6100 4750 6100
+Text HLabel 2200 1550 0    60   Input ~ 0
+VBUS
+Text HLabel 2200 1950 0    60   Input ~ 0
+GNDBUS
+Text HLabel 4750 4450 2    60   Output ~ 0
+VESD
+Text HLabel 4350 2400 2    60   Input ~ 0
+CHRG
+Wire Wire Line
+	4300 2400 4350 2400
+Wire Wire Line
+	3700 1450 4850 1450
+$Comp
+L GNDD #PWR?
+U 1 1 57401DD2
+P 3700 2650
+F 0 "#PWR?" H 3700 2400 50  0001 C CNN
+F 1 "GNDD" H 3700 2500 50  0000 C CNN
+F 2 "" H 3700 2650 50  0000 C CNN
+F 3 "" H 3700 2650 50  0000 C CNN
+	1    3700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57402100
+P 3700 1400
+F 0 "#PWR?" H 3700 1250 50  0001 C CNN
+F 1 "+5V" H 3700 1540 50  0000 C CNN
+F 2 "" H 3700 1400 50  0000 C CNN
+F 3 "" H 3700 1400 50  0000 C CNN
+	1    3700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57402256
+P 2700 3850
+F 0 "#PWR?" H 2700 3700 50  0001 C CNN
+F 1 "+5V" H 2700 3990 50  0000 C CNN
+F 2 "" H 2700 3850 50  0000 C CNN
+F 3 "" H 2700 3850 50  0000 C CNN
+	1    2700 3850
+	1    0    0    -1  
+$EndComp
+Text HLabel 2250 4250 0    60   Input ~ 0
+ENABLE
+Text HLabel 4750 6100 2    60   Output ~ 0
+VAA
+Text HLabel 4850 1450 2    60   Output ~ 0
+5V
+Wire Wire Line
+	3700 2550 4850 2550
+Connection ~ 3700 2550
+Text HLabel 4850 2550 2    60   Output ~ 0
+GNDD
+$EndSCHEMATC
