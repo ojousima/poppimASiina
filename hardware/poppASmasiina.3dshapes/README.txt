@@ -12,8 +12,11 @@ KiCAD understands VRML (.wrl) 3D models. Create the 3D model in your favourite S
 capable 3D CAD, and then run "meshconv.exe -c wrl <inputfile> -o <outputfile>" to convert 
 STL into WRL.
 
-Meshconv is available at http://www.cs.princeton.edu/~min/meshconv/ .  
-
 3D model then has to be installed to KiCAD 3D model folder, see "Installing" for details.
 Finally KiCAD footprint has to be setup to use the model my editing 3D settings of the part.
 If there is a scaling issue, try scaling the model to/from inches.
+
+*********
+Licenses*
+*********
+Meshconv is written by Patric Min, it is available at http://www.cs.princeton.edu/~min/meshconv/ .  
