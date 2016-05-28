@@ -624,10 +624,6 @@ Text HLabel 1850 5000 0    60   Input ~ 0
 P_RIGHT
 Text HLabel 1850 5200 0    60   Input ~ 0
 N_RIGHT
-Text HLabel 1850 6400 0    60   Input ~ 0
-LEFT_OUT
-Text HLabel 1850 6600 0    60   Input ~ 0
-RIGHT_OUT
 Text HLabel 4850 5100 2    60   Output ~ 0
 RIGHT_OUT
 Text HLabel 4850 3400 2    60   Output ~ 0
@@ -642,4 +638,12 @@ Connection ~ 2000 1000
 Wire Wire Line
 	1900 2050 2000 2050
 Connection ~ 2000 2050
+Text Label 3550 5650 0    60   ~ 0
+RIGHT_SE
+Text Label 3500 3950 0    60   ~ 0
+LEFT_SE
+Text Label 1850 6400 2    60   ~ 0
+LEFT_SE
+Text Label 1850 6600 2    60   ~ 0
+RIGHT_SE
 $EndSCHEMATC
