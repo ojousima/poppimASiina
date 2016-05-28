@@ -350,7 +350,6 @@ F8 "CHRG" I L 2500 1100 60
 F9 "GNDD" O R 3350 1300 60 
 F10 "BATTERY+" I L 2500 1200 60 
 $EndSheet
-NoConn ~ 1150 1200
 Text Label 1500 1100 2    60   ~ 0
 USB_D+
 Text Label 1500 1000 2    60   ~ 0
@@ -1210,14 +1209,21 @@ Wire Wire Line
 Wire Wire Line
 	6650 2050 6650 2250
 $Comp
-L GNDA #PWR?
+L GNDA #PWR027
 U 1 1 57499599
 P 6650 2250
-F 0 "#PWR?" H 6650 2000 50  0001 C CNN
+F 0 "#PWR027" H 6650 2000 50  0001 C CNN
 F 1 "GNDA" H 6650 2100 50  0000 C CNN
 F 2 "" H 6650 2250 50  0000 C CNN
 F 3 "" H 6650 2250 50  0000 C CNN
 	1    6650 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1150 1200 1300 1200
+Wire Wire Line
+	1300 1200 1300 1300
+Connection ~ 1300 1300
+Text Notes 1050 1600 0    60   ~ 0
+Add test pad for \nalternate connections\nof ID pin
 $EndSCHEMATC
