@@ -1,4 +1,4 @@
-update=Sat 21 May 2016 17:34:42 EEST
+update=04/06/2016 17:04:16
 version=1
 last_client=kicad
 [pcbnew]
@@ -47,3 +47,6 @@ LibName5=lib/ltc6242
 LibName6=lib/mic5233-xx
 LibName7=lib/bat54s
 LibName8=lib/tps22860
+LibName9=lib/cd143a-sr05
+LibName10=lib/lm2776
+LibName11=linear
