@@ -17,8 +17,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "poppimASiina Audio IO protection"
-Date "2016-05-21"
-Rev "aa390d9"
+Date "2016-06-05"
+Rev "2ac7968"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""

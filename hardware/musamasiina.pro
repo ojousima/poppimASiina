@@ -1,4 +1,4 @@
-update=04/06/2016 17:04:16
+update=05/06/2016 01:14:11
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=printout/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=lib
@@ -50,3 +40,13 @@ LibName8=lib/tps22860
 LibName9=lib/cd143a-sr05
 LibName10=lib/lm2776
 LibName11=linear
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=printout/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

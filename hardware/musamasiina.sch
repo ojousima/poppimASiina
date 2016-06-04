@@ -16,9 +16,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title "poppimASiina block diagram"
-Date "2016-05-21"
-Rev "aa390d9"
+Title "poppimASiina TINY block diagram"
+Date "2016-06-05"
+Rev "2ac7968"
 Comp "Aivan Sama / Säätökerho"
 Comment1 "http://tinyurl.com/saatomieliset"
 Comment2 ""
